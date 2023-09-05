@@ -1,0 +1,439 @@
+/* RESET =========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+/* =========================== */
+body {
+    background-color: rgb(243, 243, 243);
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+h3 {
+    font-size: 0.75rem;
+    font-weight: 100;
+    margin-bottom: 0.75rem;
+}
+
+fieldset {
+    border: none;
+}
+
+input {
+    height: 1.75rem;
+    font-size: 0.75;
+    padding-left: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+input::placeholder {
+    color: lightgray;
+}
+
+button {
+    font-size: 0.75rem;
+    width: fit-content;
+    padding: 0.5rem 0.75rem;
+    border: none;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* Barra superior e logo =========================== */
+header div.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0.4rem 0.8rem;
+    background-color: white;
+    border-bottom: 1px solid #ebebeb;
+}
+
+header div.logo {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
+}
+
+header div.logo img {
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    top: 0.125rem;
+}
+
+header div.logoText {
+    color: rgb(255, 69, 0);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+header svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+header svg:hover path{
+    fill: orangered;
+}
+
+
+
+
+
+
+
+
+
+/* Imagem Banner e Quadro de Reservas =========================== */
+nav {
+    overflow: hidden;
+    position: relative;
+
+    margin-bottom: 1.5rem;
+}
+
+nav div.bgMenu {
+    height: 32rem;
+    overflow: hidden;
+}
+
+nav div.bgMenu img {
+    width: 100vw;
+    position: relative;
+}
+
+
+
+
+
+/* Botões do Quadro de Reservas ============================= */
+nav div.bookingBoard div.bookingMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    color: white;
+    font-size: 0.875rem;
+}
+
+nav div.bookingBoard div.bookingMenu div.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    background-color: black;
+
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 0;
+
+    cursor: pointer;
+}
+
+nav div.bookingBoard div.bookingMenu div.button:hover {
+    background-color: orangered;
+}
+
+nav div.bookingBoard div.bookingMenu img {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+nav div.bookingBoard div.bookingMenu img.bed {
+    width: 1.125rem;
+}
+
+nav div.bookingBoard div.bookingMenu div#flight {
+    background-color: orangered;
+}
+
+nav div.bookingBoard div.bookingMenu div.button img.bed {
+    margin-right: 0.25rem;
+}
+
+nav div.bookingBoard div.bookingMenu div.button img.car {
+    margin-right: 0.15rem;
+}
+
+
+
+
+
+/* Quadro de Reservas ======================================= */
+nav div.bookingBoard {
+    background-color: white;
+    width: 57rem;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav div.bookingBoard fieldset {
+    padding: 1.25rem 0.75rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+nav div.bookingBoard div.inputGroup {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.75rem;
+
+    font-size: 0.75rem;
+}
+
+nav div.bookingBoard div.input {
+    display: flex;
+    flex-direction: column;
+    width: 27.5rem;
+
+    color: gray;
+}
+
+nav div.bookingBoard div.input input {
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+nav div.bookingBoard button {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+nav div.bookingBoard button:hover {
+    background-color: orangered;
+}
+
+
+
+
+
+
+
+/* Main e Sections =========================== */
+main {
+    width: auto;
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main article {
+    width: 75rem;
+
+}
+
+
+
+
+
+
+
+
+/* Good Offers Right Now / Galeria  ====================================================== */
+main article div.gallery {
+    display: grid;
+    grid-template-areas:
+        "primary one two"
+        "primary three four";
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 50% 50%;
+
+    margin: 1.25rem 0;
+}
+
+main article div.gallery div.primary {
+    grid-area: primary;
+    /* background-color: red; */
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* Apenas imagem principal */
+main article div.gallery div.primary img {
+    height: 100%;
+    width: 100%;
+    padding: 0.25rem 0;
+    padding-right: 0.25rem;
+}
+
+main article div.gallery div.primary p {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0.75rem;
+
+    color: white;
+}
+
+/* Todas as imagens ================================ */
+main article div.gallery img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+main article div.gallery img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+
+    filter: brightness(80%);
+}
+
+main article div.gallery div.one {
+    grid-area: one;
+    /* background-color: green; */
+    overflow: hidden;
+    padding: 0.25rem;
+
+    position: relative;
+}
+
+main article div.gallery div.one p {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0.75rem;
+
+    color: white;
+}
+
+main article div.gallery div.two {
+    grid-area: two;
+    /* background-color: blue; */
+    overflow: hidden;
+    padding: 0.25rem;
+
+    position: relative;
+}
+
+main article div.gallery div.two p {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0.75rem;
+
+    color: white;
+}
+
+main article div.gallery div.three {
+    grid-area: three;
+    /* background-color: yellow; */
+    overflow: hidden;
+    padding: 0.25rem;
+
+    position: relative;
+}
+
+main article div.gallery div.three p {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0.75rem;
+
+    color: white;
+}
+
+main article div.gallery div.four {
+    grid-area: four;
+    /* background-color: chocolate; */
+    overflow: hidden;
+    padding: 0.25rem;
+
+    position: relative;
+}
+
+main article div.gallery div.four p {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0.75rem;
+
+    color: white;
+}
+
+
+
+
+
+
+
+/* Explore Nature =========================== */
+main article section.nature h3 {
+    color: lightgray;
+    font-style: italic;
+}
+
+main article section.nature img {
+    width: 100%;
+    cursor: pointer;
+}
+
+main article section.nature button {
+    background-color: white;
+    padding-bottom: 0;
+}
+
+main article section.nature div.cards {
+    display: flex;
+    gap: 0.5rem;
+}
+
+main article section.nature button:hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+main article section.nature div.textArea {
+    padding: 0.75rem;
+}
+
+main article section.nature div.cards div.card1 {
+    background-color: white;
+
+}
+
+main article section.nature div.cards div.card2 {
+    background-color: white;
+}
