@@ -133,7 +133,7 @@ nav div.bgMenu {
 }
 
 nav div.bgMenu img {
-    width: 100vw;
+    width: 100%;
     position: relative;
 }
 
