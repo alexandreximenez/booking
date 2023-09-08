@@ -1,6 +1,7 @@
 footer {
-    width: auto;
+    width: 100%;
     margin-bottom: 1.5rem;
+    padding: 0 4rem;
 
     display: flex;
     flex-direction: column;
@@ -8,7 +9,7 @@ footer {
 }
 
 footer div.containerFooter {
-    width: 75rem;
+    width: 100%;
 }
 
 /* Newsletter =========================== */
